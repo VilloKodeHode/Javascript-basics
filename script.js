@@ -1,3 +1,5 @@
+import { evenOrOdd } from "./OddorEven"
+
 
 // console.log skriver ut til consollen i developer tools på nettsiden
 console.log("hello world!")
@@ -20,7 +22,8 @@ console.log(setning)
 
 let nummer = 1
 const nummer2 = 2
-// sum skal være = 3
+
+// forventer sum skal være = 3
 let sum = nummer + nummer2 
 
 console.log("nummer er: " + nummer)
@@ -31,8 +34,9 @@ nummer++
 
 console.log("resultatet skal være 2: " + nummer)
 
+let nySum = nummer + nummer2
 
-// console.log(sum)
+console.log("summen er: " + nySum + " (etter nummer øker med 1)")
 
 // Hvordan å få et tilfeldig tall mellom 1 og 10:
 const randomNumber = Math.random() * 9 + 1
@@ -57,9 +61,11 @@ console.log(fruitsArray)
 
 console.log(fruitsArray[1])
 
+// hvordan å legge til et element på slutten av et array:
 fruitsArray.push("eple")
 
 console.log(fruitsArray)
+// hvordan å fjerne det siste elementet i et array:
 fruitsArray.pop()
 console.log(fruitsArray)
 console.log(fruitsArray.length)
@@ -69,6 +75,8 @@ ord3 = "halla på deg!"
 
 console.log(ord3)
 
+
+// Dette er et eksempel på et objekt med 4 keys (firstName, lastName, age og hobbies) og 5 values (Joakim, Villo, 35 og verdiene i hobbies), og hvordan å hente ut en av disse:
 const persons = [{
 
     firstName: "Joakim",
