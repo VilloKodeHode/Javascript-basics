@@ -37,12 +37,12 @@ console.log(`Tallet er ${roundedNumber}`)
 
 
 // Hvordan å forekle randomNumber generator og bruke callback funksjon:
-function getRandomNumber(maxNumber) {
+function simpleFunction(maxNumber) {
     
     // math.round runder av til nærmeste heltall, math.floor runder ned til nærmeste heltall, math.ceil runder opp til nærmeste heltall:
     return Math.round(Math.random() * maxNumber);
 }
-console.log(getRandomNumber(10));
+console.log(simpleFunction(10));
 
 // Kompliment funksjon:
 function giveCompliment() {
@@ -69,3 +69,5 @@ console.log(randomCompliment);
 
 
 
+
+console.log (` Oppsummering: Du er $`)
