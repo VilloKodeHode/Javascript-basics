@@ -1,4 +1,4 @@
-import { evenOrOdd } from "./OddorEven"
+// import { evenOrOdd } from "./OddorEven"
 
 
 // console.log skriver ut til consollen i developer tools på nettsiden
@@ -11,6 +11,7 @@ let ord1 = "hello"
 const ord2 = "World!"
 
 console.log(ord1 + " " + ord2)
+console.log(`${ord1} ${ord2}`)
 
 // hvordan å finne lengden av objekter (i dette tilfelle bokstaver):
 console.log((ord1 + ord2).length)
@@ -39,7 +40,7 @@ let nySum = nummer + nummer2
 console.log("summen er: " + nySum + " (etter nummer øker med 1)")
 
 // Hvordan å få et tilfeldig tall mellom 1 og 10:
-const randomNumber = Math.random() * 9 + 1
+const randomNumber = Math.random() * 5 + 1 
 console.log(randomNumber)
 const roundedNumber = Math.round(randomNumber)
 console.log(roundedNumber)
@@ -70,11 +71,22 @@ fruitsArray.pop()
 console.log(fruitsArray)
 console.log(fruitsArray.length)
 
-// nytt i JS. Man behøver ikke definere variabler, men allikevel GJØR DET
+fruitsArray.splice(1,1)
+console.log(`jordbær skal ha blitt slicet bort: ${fruitsArray}`)
+//! nytt i JS. Man behøver ikke definere variabler, men allikevel GJØR DET. IKKE SKRIV UTEN LET ELLER CONST!
 ord3 = "halla på deg!"
 
 console.log(ord3)
 
+
+const person = {
+    firstName: "Joakim",
+    lastName: "Villo",
+    age: 35,
+    hobbies: ["Gaming", "Trening", "Filmer"]
+}
+
+console.log(person.hobbies[0])
 
 // Dette er et eksempel på et objekt med 4 keys (firstName, lastName, age og hobbies) og 5 values (Joakim, Villo, 35 og verdiene i hobbies), og hvordan å hente ut en av disse:
 const persons = [{
@@ -96,15 +108,21 @@ const Bob = persons[1]
 
 const BobAge = Bob.age
 
-console.log(Joakim.firstName)
-console.log(Bob.firstName)
+console.log(persons[0].firstName)
+console.log(persons[1].lastName)
 console.log(BobAge)
+console.log(persons[1].hobbies[1])
 
 
 
+let tall = 10
+const tall2 = 2
 
+console.log(tall + tall2)
 
+tall++
 
+console.log(tall)
 
 
 
