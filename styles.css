@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+div.card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgb(184, 202, 202);
+    min-height: 300px;
+    min-width: 200px;
+    border-radius: 6px;
+    border: 2px solid rgb(169, 192, 192);
+    padding: 10px;
+    font-family: fantasy;
+ 
+    box-shadow: 2px 2px 3px rgb(132, 155, 155);
+}
+
+div.card h2 {
+
+    padding: 2px;
+  text-align: center;
+    background-color: rgb(138, 146, 146);
+}
+
+div.card p {
+}
+
+
+div.card:hover  {
+    outline: olive dotted 2px;
+    scale: 1.1;
+}
+
+.card img {
+}
