@@ -70,4 +70,4 @@ console.log(randomCompliment);
 
 
 
-console.log (` Oppsummering: Du er $`)
+
