@@ -108,6 +108,17 @@ console.log(persons[1].lastName);
 console.log(BobAge);
 console.log(persons[1].hobbies[1]);
 
+const heroStats = {
+  name: "Link",
+  race: "Hylian",
+  alder: "10k+",
+  says: ["HAIA!", "UAAAAA!", "nothing"],
+};
+
+console.log(heroStats.name);
+console.log(heroStats.says[2]);
+
+
 let tall = 10;
 const tall2 = 2;
 
